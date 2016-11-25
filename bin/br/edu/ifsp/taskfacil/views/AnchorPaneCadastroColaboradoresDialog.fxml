@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="169.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.taskfacil.controllers.AnchorPaneCadastroColaboradoresDialogController">
+   <children>
+      <GridPane layoutX="14.0" layoutY="42.0" prefHeight="72.0" prefWidth="422.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="77.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="345.0" minWidth="10.0" prefWidth="345.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="ID:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label text="Nome:" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldIdColaborador" GridPane.columnIndex="1" />
+            <Label fx:id="labelNomeColaborador" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Group layoutX="114.0" layoutY="124.0">
+         <children>
+            <Group layoutX="39.0" layoutY="127.0">
+               <children>
+                  <Group>
+                     <children>
+                        <Button fx:id="buttonConfirmarColaborador" layoutX="80.0" layoutY="-116.0" mnemonicParsing="false" onAction="#handleButtonConfirmar" prefWidth="70.0" text="Confirmar" />
+                     </children>
+                  </Group>
+               </children>
+            </Group>
+         </children>
+      </Group>
+      <Button fx:id="buttonCancelarColaborador" layoutX="146.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleButtonCancelar" prefWidth="70.0" text="Cancelar" />
+   </children>
+</AnchorPane>
